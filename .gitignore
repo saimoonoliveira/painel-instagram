@@ -1,0 +1,21 @@
+node_modules/
+.env
+.env.local
+supabase/.temp/
+supabase/.branches/
+*.log
+.DS_Store
+.supabase-db-password
+.meta-verify-token
+.painel-temp-password
+.setup-key
+.vigiar-key
+.env.production
+.env.*.local
+.vercel/
+dist/
+
+# Conteúdo e mídia pessoais (não fazem parte do sistema)
+fabrica/
+scripts/
+.claude/
