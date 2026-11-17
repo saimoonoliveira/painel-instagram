@@ -15,7 +15,7 @@ Leva de 1 a 2 horas na primeira vez. Tudo roda em contas suas, nos planos gráti
 | [Vercel](https://vercel.com) | publicar o painel | grátis |
 | [Meta for Developers](https://developers.facebook.com) | conversar com o Instagram | grátis |
 | Instagram **profissional** (Empresa ou Criador) | a conta que será automatizada | grátis |
-| [Apify](https://apify.com) (opcional) | aba Monitor: guardar stories de concorrentes | US$ 5/mês grátis |
+| [Apify](https://apify.com) (opcional) | aba Monitor: guardar stories de concorrentes | US$ 5/mês grátis (cabe ~5 perfis, veja abaixo) |
 
 No computador: [Node.js 20+](https://nodejs.org) e `git`.
 
@@ -111,6 +111,18 @@ Pronto: crie um fluxo em **Fluxos** e um gatilho em **Gatilhos** para ele respon
 ## Dar acesso a outra pessoa
 
 Crie o usuário dela (passo 8.1, sem o 8.2), com senha forte. Ela entra e conecta o Instagram dela. Cada usuário só vê as contas que ele mesmo conectou; o administrador vê todas.
+
+## Quanto custa a aba Monitor (Apify)
+
+O resto do sistema roda no grátis sem limite prático. O Monitor é a única parte que consome crédito, porque cada story coletado é cobrado pelo Apify:
+
+- **US$ 0,0025 por story**, US$ 0,001 por coleta e US$ 0,0026 por perfil por dia no Comparativo.
+- Cada perfil é verificado **uma vez a cada ~20 horas** (o story dura 24h, então nenhum se perde, e o mesmo story não é pago duas vezes).
+- Um perfil que posta ~12 stories por dia custa **cerca de US$ 1 por mês**. Os **US$ 5 grátis cobrem uns 5 perfis** desse tamanho; perfis que postam muito consomem mais.
+- O botão de atualizar no card do perfil busca na hora, mas **paga de novo** os stories que já estavam salvos. Use com moderação.
+- O plano grátis roda no máximo **5 coletas ao mesmo tempo**; acima disso, as outras ficam para a próxima rodada (15 min).
+
+Acabou o crédito do mês: o Monitor para até o crédito renovar (ou até você assinar um plano do Apify). Nada mais no sistema é afetado.
 
 ## Problemas comuns
 
