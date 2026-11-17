@@ -19,9 +19,42 @@ Leva de 1 a 2 horas na primeira vez. Tudo roda em contas suas, nos planos gráti
 
 No computador: [Node.js 20+](https://nodejs.org) e `git`.
 
+## 0. Crie as contas (uma vez, ~30 min)
+
+Faça na ordem: as outras contas entram usando o GitHub, o que poupa senhas.
+
+**GitHub**
+1. Em [github.com](https://github.com), clique em **Sign up**.
+2. Informe e-mail, senha e um nome de usuário, e digite o código que chega no seu e-mail.
+
+**Supabase**
+1. Em [supabase.com](https://supabase.com), clique em **Start your project**.
+2. Escolha **Continue with GitHub** e autorize. A organização grátis é criada sozinha; o projeto você cria no passo 2.
+
+**Vercel**
+1. Em [vercel.com](https://vercel.com), clique em **Sign Up** e escolha o plano **Hobby** (grátis).
+2. Escolha **Continue with GitHub** e autorize.
+
+**Instagram profissional** (pule se a conta já é Empresa ou Criador)
+1. No app do Instagram: **Perfil → ☰ → Configurações e privacidade → Tipo de conta e ferramentas**.
+2. **Mudar para conta profissional** e escolha **Empresa** ou **Criador de conteúdo**.
+
+**Meta for Developers**
+1. Em [developers.facebook.com](https://developers.facebook.com), clique em **Começar** e entre com o seu Facebook.
+2. Confirme telefone ou e-mail se pedir, aceite os termos e escolha **Desenvolvedor**. O app em si você cria no passo 3.
+
+**Apify** (opcional, só para a aba Monitor)
+1. Em [apify.com](https://apify.com), clique em **Sign up for free** (dá para entrar com Google ou GitHub).
+2. Guarde para o passo 5: o token fica em **Settings → API & Integrations**.
+
+**No computador**
+- **Node.js:** baixe a versão **LTS** em [nodejs.org](https://nodejs.org) e instale.
+- **git:** no Mac, abra o Terminal e digite `git --version`; se aparecer um aviso, aceite instalar. No Windows, instale pelo [git-scm.com](https://git-scm.com) e rode todos os comandos deste guia no **Git Bash**.
+- **Claude Code** (opcional, recomendado): é ele que pode fazer a instalação por você a partir daqui.
+
 ## 1. Pegue a sua cópia
 
-No GitHub, no repositório que você recebeu: **Use this template → Create a new repository** (deixe **privado**). Depois:
+Abra o link que você recebeu (ou o repositório no GitHub) e clique em **Use this template → Create a new repository**. Deixe **privado**. Depois, no terminal:
 
 ```bash
 git clone https://github.com/<seu-usuario>/<seu-repositorio>.git
