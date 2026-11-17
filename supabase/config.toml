@@ -417,15 +417,11 @@ enabled = true
 [functions.webhook]
 verify_jwt = false
 
-# Função de setup único (cadastro automático da conta IG). Sem JWT.
-[functions.setup]
-verify_jwt = false
-
 # OAuth do Instagram (login por dentro da ferramenta). Sem JWT.
 [functions.oauth]
 verify_jwt = false
 
-# Métricas do Instagram para o Sistema de Conteúdo (Mac). Sem JWT: protegida pela METRICAS_KEY no cabeçalho x-chave.
+# Métricas do Instagram para apps externos. Sem JWT: protegida pela METRICAS_KEY no cabeçalho x-chave.
 [functions.metricas]
 verify_jwt = false
 

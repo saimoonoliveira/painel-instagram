@@ -1,15 +1,19 @@
 # Licença de uso
 
-Copyright (c) 2026 Saimon Oliveira. Todos os direitos reservados.
+Copyright (c) 2026 Saimon Oliveira.
 
-Este código é entregue aos participantes da mentoria, que podem:
+## Pode
 
-- instalar e usar no próprio negócio e para atender os próprios clientes;
-- modificar à vontade para esse uso.
+- Instalar e usar de graça no seu próprio negócio.
+- Usar como ferramenta interna para atender clientes, inclusive quando você cobra pelo seu serviço (ex.: gestão de Instagram).
+- Modificar o código à vontade para esse uso.
 
-Não é permitido:
+## Não pode
 
-- vender, revender, sublicenciar ou distribuir o código (original ou modificado) a terceiros;
-- publicar o código em repositório público.
+- Vender, revender ou sublicenciar este código, original ou modificado.
+- Vender acesso ao sistema em si: cobrar assinatura, licença ou mensalidade para outras pessoas usarem este software ou um derivado dele (SaaS).
+- Remover este aviso de licença das cópias.
 
-O software é entregue "como está", sem garantia de qualquer tipo. Cada instalação é responsável pelas próprias contas (Supabase, Vercel, Meta, Apify), pelos custos delas e pelo tratamento dos dados dos seus contatos conforme a LGPD.
+## Sem garantia
+
+O software é entregue "como está", sem garantia de qualquer tipo. Quem instala é responsável pelas próprias contas (Supabase, Vercel, Meta, Apify), pelos custos delas, pelo cumprimento das regras da Meta e pelo tratamento dos dados dos seus contatos conforme a LGPD.
