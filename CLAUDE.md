@@ -14,7 +14,7 @@ Siga o `INSTALAR.md`, **um passo por vez**, e só avance quando o passo anterior
 
 ## Regras do projeto
 
-- Não desligue o 2FA nem tire a checagem `aal2` de `is_admin()` / `can_access_account()`: é ela que impede acesso só com a senha.
+- Não reabra o cadastro público do Supabase: só o administrador cria usuários.
 - O webhook grava só na conta dona do evento (`ig_user_id`); não crie "fallback" para outra conta.
 - Mudança no banco = nova migração em `supabase/migrations/` (nunca editar uma já aplicada).
 - Textos do painel em português do Brasil.

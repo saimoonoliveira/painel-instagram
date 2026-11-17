@@ -104,20 +104,18 @@ npx supabase db query --linked "insert into app_admins (user_id) select id from 
 ## 9. Primeiro acesso
 
 1. Abra o endereço da Vercel e entre com o e-mail e a senha.
-2. A **verificação em duas etapas é obrigatória**: escaneie o QR code com um app autenticador (Google Authenticator, Authy ou Senhas do iPhone) e digite o código.
-3. Vá em **Conexão → Conectar Instagram**, entre na conta testadora e autorize.
+2. Vá em **Conexão → Conectar Instagram**, entre na conta testadora e autorize.
 
 Pronto: crie um fluxo em **Fluxos** e um gatilho em **Gatilhos** para ele responder sozinho.
 
 ## Dar acesso a outra pessoa
 
-Crie o usuário dela (passo 8.1, sem o 8.2). Ela entra, cadastra o próprio 2FA e conecta o Instagram dela. Cada usuário só vê as contas que ele mesmo conectou; o administrador vê todas.
+Crie o usuário dela (passo 8.1, sem o 8.2), com senha forte. Ela entra e conecta o Instagram dela. Cada usuário só vê as contas que ele mesmo conectou; o administrador vê todas.
 
 ## Problemas comuns
 
 | Sintoma | O que fazer |
 |---|---|
-| Perdeu o celular do 2FA | `npx supabase db query --linked "delete from auth.mfa_factors where user_id = (select id from auth.users where email = 'pessoa@exemplo.com')"`. No próximo login ela cadastra de novo. |
 | "Token expirado" na Conexão | O token do Instagram dura ~60 dias: **Renovar conexão**. |
 | Comentário não dispara nada | Confira se existe um **gatilho** ativo apontando para o fluxo e se o webhook está assinado (passo 7). |
 | Aba Monitor parada | Falta o token do Apify: rode `bash instalar/segredos.sh` de novo e informe. |

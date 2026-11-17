@@ -12,7 +12,6 @@ Sistema próprio, no estilo das ferramentas de automação de DM, só para o **I
 - **Conteúdo:** ver e baixar seus posts, reels e stories pelo painel, com ranking por visualizações.
 - **Monitor (opcional, Apify):** guarda os stories de concorrentes e inspirações, compara seguidores e engajamento e salva sequências como referência.
 - **Multi-usuário:** cada pessoa vê só as contas que conectou; o administrador vê todas.
-- **Verificação em duas etapas obrigatória**, exigida também no banco: com só a senha, ninguém lê nada.
 
 ## Como funciona
 
@@ -25,7 +24,7 @@ Instagram (comentário/DM)
       ▼
  API do Instagram  ──►  DM / resposta ao comentário
 
- Painel (Vite + React, na Vercel) ──► Supabase (login + 2FA, RLS por conta)
+ Painel (Vite + React, na Vercel) ──► Supabase (login, RLS por conta)
 ```
 
 | Pasta | O quê |
@@ -38,7 +37,8 @@ Instagram (comentário/DM)
 ## Regras de segurança
 
 - Token, chave e senha **nunca** vão para o código nem para chat. Ficam nos secrets do Supabase e no Vault.
-- Toda tabela tem RLS; o acesso passa por `can_access_account()` e `is_admin()`, que exigem sessão com 2FA (`aal2`).
+- Toda tabela tem RLS; o acesso passa por `can_access_account()` e `is_admin()`.
+- Cadastro público desligado: só o administrador cria usuários, com senha forte.
 - O webhook só aceita evento com assinatura válida da Meta e só grava na conta dona do evento.
 
 ## Limites da Meta
